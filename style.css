@@ -1,0 +1,71 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top-container{
+    background-image: url("/AU-wp4.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{
+font-family: cursive;
+color: red;
+font-size: 30px;
+margin: 5px 20px;
+}
+.logoLink{
+    text-decoration: none;
+}
+
+.top-container h1{
+    color: goldenrod;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px black;
+}
+
+.text{
+    margin: 50px 5%;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    transition: background-color .2s;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+
+}.navbar ul li a:hover{
+    color: red;
+}
+
+.navbar.active{
+    background-color: black;
+
+}
+.navbar.active ul li a{
+    color: white;
+}
+
